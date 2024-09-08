@@ -1,0 +1,417 @@
+/*
+ * Este arquivo CSS estiliza a página principal do site.
+ * Ele define as fontes, cores, layout e responsividade dos elementos.
+ */
+
+/* Importa as fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* Estiliza o corpo da página */ /*
+ * Estilo global para o corpo da página.
+ * Define a fonte padrão, cor de fundo, layout e background.
+ */
+body {
+    font-family: "Chakra Petch", sans-serif;
+    /* Define a fonte padrão */
+    background-color: #DDDDDD;
+    /* Cor de fundo da página */
+    display: flex;
+    /* Usa Flexbox para layout */
+    flex-direction: column;
+    /* Alinha os itens na vertical */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    justify-content: center;
+    /* Centraliza os itens verticalmente */
+    height: fit-content;
+    /* Preenche a altura total da viewport */
+    margin: 0;
+    /* Remove a margem padrão */
+    padding: 0;
+    /* Remove o padding padrão */
+    background-image: url('hogwartsexpress2.jpg');
+    /* Adiciona a imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*
+ * Estiliza o cabeçalho da página.
+ * Define a posição, cor de fundo e outros estilos.
+ */
+
+header {
+    background-color: rgba(255, 255, 255, 0.4); /* Cor de fundo com 40% de opacidade */
+    text-align: center;
+    padding: 10px; /* Ajuste conforme necessário */
+    height: 165px; /* Reduza a altura se necessário */
+    width: 100%; /* Largura total da página */
+    position: fixed;
+    top: 0;
+    font-size: 1rem; /* Tamanho da fonte */
+    padding-top: 0.1px;
+  }
+
+  /*
+ * Contêiner para centralizar os títulos.
+ * Utiliza Flexbox para alinhamento.
+ */
+  .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+/* Estiliza os títulos h1 */ /*
+ * Estiliza o título principal (h1).
+ * Aplica efeitos de sombra, transição e animação.
+ */
+h1 {
+    font-size: 3.6rem;
+    line-height: 1;
+    color: #4B0000;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    font-style: italic;
+    font-family: "Playfair Display", serif; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #4B0000;
+    animation: fadeIn 2s ease-in-out;
+    line-height: 1.2; /* Aumenta o espaço entre as linhas */
+  padding-bottom: 5px; /* Adiciona espaço interno abaixo do texto */
+  box-sizing: border-box; /* Inclui a borda no tamanho total do elemento */
+  margin-top: 5px;
+  }
+
+  h1:hover {
+    transform: scale(1.05);
+    color: #FFFFFF;
+    background-color: #4B0000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Estiliza os títulos h2 */ /*
+ * Estiliza o título secundário (h2).
+ * Define a fonte, cor e outros estilos.
+ */
+h2 {
+    font-size: 3rem;
+    /* Tamanho da fonte */
+    color: #35170D;
+    /* Cor do texto */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    letter-spacing: 0.4rem;
+    /* Espaçamento entre letras */
+    font-style: italic;
+    font-family: "Playfair Display";
+}
+h3 {
+    font-family: 'Roboto Serif', serif; /* Fonte serif para um toque mais clássico */
+    font-size: 1.5rem;
+    color: #1B1D0C; /* Tom de marrom para combinar com a temática mágica */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    letter-spacing: 0.4rem;
+    line-height: 1.8;
+    margin-top: -38px;
+    margin-bottom: 20px;
+    padding-top: 0.1px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0.5px rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(1px 1px 0px #43481E);
+  }
+
+h4 {
+    font-family: 'merriweather', cursive; /* Substitua por uma fonte que combine com o tema */
+    font-weight: bold;
+    color: #4B0000; /* Cor marrom para dar um ar antigo */
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #F2EEE3; /* Cor de fundo semelhante a pergaminho */
+    opacity: 0.75;
+    padding: 10px;
+    border-radius: 1.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra leve */
+  }
+
+/* Estiliza as seções da página */
+section {
+    display: flex;
+    /* Usa Flexbox para layout */
+    flex-direction: column;
+    /* Alinha os itens na vertical */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem;
+    /* Espaçamento abaixo de cada seção */
+    
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 38rem;
+    /* Largura dos inputs */
+    border: none;
+    /* Remove a borda padrão */
+    padding: 1rem;
+    /* Espaçamento interno */
+    border-radius: 1.5rem;
+    /* Borda arredondada */
+    margin-bottom: 1rem;
+    /* Espaçamento abaixo dos inputs */
+    color: #2B3A0B;
+    /* Cor do texto */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+    box-sizing: border-box;
+    /* Inclui padding e border na largura total */
+    text-align: center;
+    /* Alinha o texto */
+    position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Controla a posição */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem;
+    /* Espaçamento interno do botão */
+    border: none;
+    /* Remove a borda padrão */
+    border-radius: 1.5rem;
+    /* Borda arredondada */
+    background-color: #4B0000;
+    /* Cor de fundo do botão */
+    color: #F8F6F1;
+    /* Cor do texto do botão */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Playfair Display";
+    letter-spacing: 0.2rem;
+    /* Estilo da fonte */
+    cursor: pointer;
+    /* Muda o cursor para indicar que é clicável */
+    position: fixed;
+    top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+  /* Controla a posição */
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+section button:hover {
+    background-color: #3D391A;
+    /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adiciona uma sombra mais intensa */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 60rem;
+    /* Largura máxima da caixa de resultados */
+    height: 46vh;
+    /* Altura máxima da caixa de resultados */
+    overflow-y: auto;
+    /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem;
+    /* Espaçamento acima da caixa de resultados */
+    padding: 1rem;
+    /* Espaçamento interno */
+    border-radius: 0.6rem;
+    /* Borda arredondada */
+    position: fixed;
+  top: 66%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Estiliza cada item de resultado */ /*
+ * Estiliza os elementos de resultado da pesquisa.
+ * Define a aparência dos itens da lista de resultados.
+ */
+.item-resultado {
+    background: #F2EEE3;
+    opacity: 0.9;
+    /* Cor de fundo dos itens */
+    border-radius: 0.6rem;
+    /* Borda arredondada */
+    padding: 1rem;
+    /* Espaçamento interno */
+    margin-bottom: 1rem;
+    /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra leve */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.7rem;
+    /* Tamanho da fonte */
+    color: #4B0000;
+    /* Cor do texto */
+    font-family: "merriweather"; /* fonte do texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid #333d005a; 
+    /* efeito de profundidade e borda fina para delimitar o título */
+}
+
+/* Estiliza os links dentro dos itens de resultado */ /*
+ * Adiciona um efeito hover para destacar os links.
+ */
+.item-resultado a {
+    text-decoration: none;
+    /* Remove o sublinhado padrão dos links */
+    color: #333D00;
+    /* Cor do texto dos links */
+    font-weight: 800; /* Define um peso de fonte mais semibold */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    transform: scale(1.05);
+    color: #FFFFFF;
+    background-color: #333D00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    /* Adiciona efeito ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #35170D;
+    /* Cor do texto */
+    margin: 0.5rem 0;
+    /* Margem acima e abaixo */
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+    font-weight: 500; /* Define um peso de fonte mais semibold */
+    line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+    margin: 1rem 0; /* Aumenta a margem para mais espaço */
+}
+
+/* Estiliza o rodapé da página */ /*
+ * Estiliza o rodapé da página.
+ * Define a posição, cor de fundo e outros estilos.
+ */
+footer {
+    background-color: #eee4d3f2;
+    opacity: 1;
+    /* Cor de fundo do rodapé */
+    color: #35170D;
+    /* Cor do texto */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    padding: -0.5;
+    /* Espaçamento interno */
+    width: 100%;
+    /* Largura total da página */
+    height: 35px;
+    position: fixed;
+    /* Posiciona o rodapé */
+    bottom: 0;
+    /* Alinha ao fundo da página */
+    font-size: 0.8rem;
+    /* Tamanho da fonte */
+}
+
+/*
+ * Media queries para ajustar o layout em diferentes tamanhos de tela.
+ */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        /* Tamanho da fonte em telas menores */
+        letter-spacing: 0.2rem;
+        /* Espaçamento entre letras em telas menores */
+    }
+
+    h2 {
+        font-size: 2rem;
+        /* Tamanho da fonte em telas menores */
+        letter-spacing: 0.2rem;
+        /* Espaçamento entre letras em telas menores */
+    }
+
+    section input {
+        width: 25rem;
+        /* Largura dos inputs em telas menores */
+        padding: 0.8rem;
+        /* Espaçamento interno em telas menores */
+    }
+
+    .resultados-pesquisa {
+        width: 40rem;
+        /* Largura da caixa de resultados em telas menores */
+        height: 40vh;
+        /* Altura da caixa de resultados em telas menores */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem;
+        /* Tamanho da fonte dos títulos em telas menores */
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem;
+        /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem;
+        /* Espaçamento entre letras em telas pequenas */
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem;
+        /* Espaçamento entre letras em telas pequenas */
+    }
+
+    section input {
+        width: 17rem;
+        /* Largura total dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem;
+        /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem;
+        /* Tamanho da fonte do botão em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 90%;
+        /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh;
+        /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem;
+        /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    footer {
+        font-size: 0.9rem;
+        /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+}
