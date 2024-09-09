@@ -1,3 +1,6 @@
+## Sobre o Projeto
+Este projeto, o Mapa do Maroto, foi desenvolvido durante a Imersão Dev com Google Gemini da Alura. Como meu primeiro projeto, ele representa o início de uma jornada de aprendizado e a paixão pelo universo de Harry Potter. Agradeço à Alura e ao Google pela oportunidade de aprendizado.
+
 ## Mapa do Maroto: Sua Passagem para os Sets de Filmagem de Harry Potter! 
 
 **Descubra os bastidores da magia!**
