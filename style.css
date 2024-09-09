@@ -334,7 +334,7 @@ footer {
 /*
  * Media queries para ajustar o layout em diferentes tamanhos de tela.
  */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     h1 {
         font-size: 2rem;
         /* Tamanho da fonte em telas menores */
@@ -414,4 +414,12 @@ footer {
         font-size: 0.9rem;
         /* Tamanho da fonte do rodapé em telas pequenas */
     }
+    .container {
+    width: 90%; /* Reduz a largura do container */
+    margin: 0 auto; /* Centraliza o conteúdo */
+  }
+
+  .image {
+    width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+  }
 }
